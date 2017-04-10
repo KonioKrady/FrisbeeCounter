@@ -1,0 +1,16 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="button_standard_width">100dp</dimen>
+    <dimen name="logo_size">100dp</dimen>
+
+    <dimen name="margin50">50dp</dimen>
+    <dimen name="standardMargin">4dp</dimen>
+    <dimen name="standardPadding">4dp</dimen>
+
+    <dimen name="resetSize">40dp</dimen>
+    <dimen name="resetMarginBottom">30dp</dimen>
+
+    <dimen name="scoreFontSize">56sp</dimen>
+    <dimen name="foulsFontSize">42sp</dimen>
+    <dimen name="zero_dp">0dp</dimen>
+</resources>

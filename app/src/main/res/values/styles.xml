@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+
+
+    <!--TEXT VIEWS||||||||||||||||||||||||||||||||||||||||||||||||||||||||||TEXT VIEWS-->
+    <style name="CounterTextviewStyle">
+        <item name="android:fontFamily">sans-serif-smallcaps</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:padding">@dimen/standardPadding</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/_0</item>
+        <item name="android:textColor">@color/textColorBlack</item>
+    </style>
+    <style name="CounterTextviewStyle.Score">
+        <item name="android:textSize">@dimen/scoreFontSize</item>
+    </style>
+    <style name="CounterTextviewStyle.Fouls">
+        <item name="android:layout_marginBottom">@dimen/margin50</item>
+        <item name="android:textSize">@dimen/foulsFontSize</item>
+    </style>
+
+
+    <!--BUTTONS||||||||||||||||||||||||||||||||||||||||||||||||||||||||||BUTTONS-->
+    <style name="CounterButtonStyle" >
+        <item name="android:layout_width">@dimen/button_standard_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginBottom">@dimen/standardMargin</item>
+    </style>
+
+    <style name="CounterButtonStyle.A">
+        <item name="android:background">@color/colorButtonA</item>
+    </style>
+    <style name="CounterButtonStyle.A.Points">
+        <item name="android:layout_above">@+id/foulButton_A</item>
+    </style>
+
+    <style name="CounterButtonStyle.B">
+        <item name="android:background">@color/colorButtonB</item>
+    </style>
+    <style name="CounterButtonStyle.B.Points">
+        <item name="android:layout_above">@+id/foulButton_B</item>
+    </style>
+
+
+    <!--IMAGE VIEWS||||||||||||||||||||||||||||||||||||||||||||||||||||||||||IMAGE VIEWS-->
+    <style name="CounterImageviewStyle">
+        <item name="android:layout_width">@dimen/logo_size</item>
+        <item name="android:layout_height">@dimen/logo_size</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:padding">@dimen/standardPadding</item>
+    </style>
+
+</resources>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.example.android.frisbeecounter.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+
+            android:layout_width="@dimen/zero_dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                style="@style/CounterImageviewStyle"
+                android:contentDescription="@string/logo_teamA_description"
+                android:src="@drawable/baja" />
+
+            <TextView
+                android:id="@+id/team_a_score"
+                style="@style/CounterTextviewStyle.Score"
+                android:layout_above="@+id/pointButton_A"/>
+
+            <Button
+                android:id="@+id/pointButton_A"
+                style="@style/CounterButtonStyle.A.Points"
+                android:onClick="pointA"
+                android:text="@string/punkt" />
+
+            <Button
+                android:id="@+id/foulButton_A"
+                style="@style/CounterButtonStyle.A"
+                android:onClick="faulA"
+                android:text="@string/faul"
+                android:layout_above="@+id/team_a_fouls"/>
+
+            <TextView
+                android:id="@+id/team_a_fouls"
+                style="@style/CounterTextviewStyle.Fouls"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/zero_dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                style="@style/CounterImageviewStyle"
+                android:contentDescription="@string/logo_teamB_description"
+                android:src="@drawable/astrodisco" />
+
+            <TextView
+                android:id="@+id/team_b_score"
+                style="@style/CounterTextviewStyle.Score"
+                android:layout_above="@+id/pointButton_B"/>
+
+            <Button
+                android:id="@+id/pointButton_B"
+                style="@style/CounterButtonStyle.B.Points"
+                android:onClick="pointB"
+                android:text="@string/punkt" />
+
+            <Button
+                android:id="@+id/foulButton_B"
+                style="@style/CounterButtonStyle.B"
+                android:layout_above="@+id/team_b_fouls"
+                android:onClick="faulB"
+                android:text="@string/faul" />
+
+            <TextView
+                android:id="@+id/team_b_fouls"
+                style="@style/CounterTextviewStyle.Fouls"
+                android:layout_alignParentBottom="true" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="@dimen/resetSize"
+        android:layout_height="@dimen/resetSize"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/resetMarginBottom"
+        android:background="@drawable/reset"
+        android:onClick="resetScore" />
+</RelativeLayout>

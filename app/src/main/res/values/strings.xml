@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FrisbeeCounter</string>
+    <string name="team_a">Team A</string>
+    <string name="_0">0</string>
+    <string name="punkt">POINT!</string>
+    <string name="faul">Foul</string>
+    <string name="team_b">Team B</string>
+    <string name="reset">Reset</string>
+    <string name="logo_teamA_description">logo_TeamA</string>
+    <string name="logo_teamB_description">logo_TeamB</string>
+</resources>
